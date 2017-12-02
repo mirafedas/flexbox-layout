@@ -1,73 +1,250 @@
 .general {
   display: flex;
-  flex-flow: column wrap;
+  width: 100%;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #00AEFF;
+  display: flex;
+  width: 100%;
+  height: 180px;
+  
+  }
+
+  .smallHeaders {
+    display: flex;
+    margin: auto;
+    width: 66%;
+    height: 80%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .darkblue {
+background-color: #009bdd;
+width: 33%;
+height: 53%;
+}
+
+.lightblue {
+  background-color: #36c3ff;
+  width: 33%;
+  height: 53%;
 }
   .content {
-  flex: 1 0 auto;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
- }
- 
-
-  .header {
-  background-color: #00AEFF;
-  width: 1920px;
-  height: 181px;
+    width: 66%;
+    margin: auto;
+ justify-content: center;
+ align-content: space-around;
+ display: flex;
   }
-
+ 
   .sidemenu {
   background-color: #ff5607;
-  width: 291px;
-  height: 902px;
-  margin-left: 114px;
-  }
+  width: 23%;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   
-.contentbox {
- background-color: white;
- width: 340px;
-}
+  }
 
+  .menu {
+    height: 6%;
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #e84900;
+  }
+
+
+.content-box {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+
+}
 .picture {
  background-color: #ffbd00;
- width: 408px;
- height: 288px;
+ width: 42%;
+ height: 290px;
  margin-right: 30px;
  margin-bottom: 10px;
  margin-top: 12px;
  margin-left: 10px;
  display: inline-flex;
+
+}
+.forrow {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.text2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.text3 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 560px;
+
 }
 
  .textbold {
    background-color: #9d9d9d; 
-   height: 17px;
-   width: 165px;
-   overflow: hidden;
-   margin-bottom: 11px;
+   height: 32px;
+   width: 100%;
+   margin-bottom: 20px;
    margin-top: 12px;
    margin-left: 10px;
- }
+    }
  
  .text {
    background-color: #cecece;
-   height: 16px;
-   width: 958px;
+   height: 30px;
+   width: 100%;
    margin-left: 10px;
    margin-right: 112px;
    margin-bottom: 20px;
-  overflow: hidden;
  }
  
- .text:last-child {
-   margin-bottom: 17px;
- }
 
  
 .footer {
  background-color: #00D169;
- width: 1920px;
- height: 120px;
+ width: 100%;
+ height: 334px;
+ display: flex;
+ }
 
+ .fooContent {
+   display: flex;
+   width: 50%;
+   height: 80%;
+   margin: auto;
  }
  
+ .fooBack {
+background-color: #02B15A;
+width: 100%;
+height: 100%;
+margin-left: 8px;
+margin-right: 8px;
+}
+
+ .fooText {
+  background-color: #038042;
+  width: 80%;
+  height: 15%;
+  margin-top: 8%;
+  margin-left: 10%;
+  justify-content: space-around;
+ }
+
+ @media (max-width: 1240px) {
+  .content {
+    width: 100%;
+ }
+.fooContent {
+  width: 70%;
+}
+}
+
+@media only screen and (max-device-width: 375px) {
+
+  .header {}
+  
+  .smallHeaders {
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+    }
+    .darkblue {
+      width: 90%;
+      height: 30%;
+      }
+      
+      .lightblue {
+        width: 90%;
+        height: 30%;
+      }
+
+.sidemenu { 
+  flex-direction: row;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu {
+  height: 40%;
+  width: 25%;
+
+}
+
+.menu:nth-last-child(4) {
+  display: none;
+}
+.menu:nth-last-child(5) {
+  display: none;
+}
+
+.content {
+  display: block;
+}
+
+.forrow {
+  display: block;
+}
+
+.picture {
+  display: block;
+  width: 100%;
+}
+
+.footer {
+  height: 500px;
+}
+
+.fooContent {
+  flex-direction: column;
+  width: 100%;
+ height: 100%;
+
+}
+
+.fooBack {
+  height: 22%;
+  width: 95%;
+  align-self: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.fooText {
+  height: 50%;
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 60%;
+}
+
+.fooText:nth-child(2) {
+  display: none;
+}
+.fooText:nth-child(3) {
+  display: none;
+}
+.fooText:nth-child(4) {
+  display: none;
+}
+
+
+}
