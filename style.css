@@ -200,6 +200,10 @@ margin-right: 8px;
 .content {
   display: block;
 }
+  
+.content-box {
+  width: 98%;
+}
 
 .forrow {
   display: block;
