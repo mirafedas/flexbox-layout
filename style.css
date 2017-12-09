@@ -1,5 +1,3 @@
-* { padding: 0; margin: 0};
-
 .general {
   display: flex;
   width: 100%;
@@ -88,7 +86,6 @@ height: 53%;
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-right: 2%;
 }
 
 .text3 {
@@ -96,12 +93,12 @@ height: 53%;
   flex-direction: column;
   width: 98%;
   height: 560px;
+  padding-right: 4px;
 }
 
  .textbold {
    background-color: #9d9d9d; 
    height: 32px;
-   width: 100%;
    margin-bottom: 20px;
    margin-top: 12px;
    margin-left: 10px
@@ -110,10 +107,10 @@ height: 53%;
  .text {
    background-color: #cecece;
    height: 30px;
-   width: 100%;
-   margin-left: 10px;
-   margin-right: 112px;
+    margin-left: 10px;
+   margin-right: 2px;
    margin-bottom: 20px;
+   padding-right: 8px;
  }
  
 
@@ -158,6 +155,11 @@ align-content: center;
 .fooContent {
   width: 70%;
 }
+
+.text3 {
+  display: flex;
+ }
+
 }
 
 @media only screen and (max-device-width: 375px) {
@@ -219,7 +221,7 @@ align-content: center;
 }
 
 .text2 {
-  width: 98%;
+  width: 100%;
 }
 
 .footer {
