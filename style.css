@@ -144,10 +144,7 @@ margin-right: 8px;
   background-color: #038042;
   width: 80%;
   height: 15%;
-  margin-top: 10%;
-  margin-left: 10%;
-  margin-bottom: 10%;
-  justify-content: space-around;
+  margin: auto;
  }
 
  @media (max-width: 1240px) {
