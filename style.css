@@ -135,9 +135,11 @@ height: 53%;
  .fooBack {
 background-color: #02B15A;
 width: 100%;
-height: 100%;
+height: 275px;
 margin-left: 8px;
 margin-right: 8px;
+display: flex;
+flex-direction: column;
 }
 
  .fooText {
